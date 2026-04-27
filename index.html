@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title id="pageTitle">Chanel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="apple-touch-icon" href="Chanel-logo.png" id="appleTouchIcon">
+  <script src="config.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <button class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <h1 class="header-title" id="headerTitle">Chanel</h1>
+      <div class="header-right">
+        <button class="icon-btn">
+          <i class="fa-regular fa-bell"></i>
+          <span class="badge">3</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="app-sidebar" id="appSidebar">
+      <div class="sidebar-header">
+        <div class="user-profile">
+          <div class="user-avatar">CC</div>
+          <div class="user-info">
+            <span class="user-name">Coco Chanel</span>
+            <span class="user-role">Creative Director</span>
+          </div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-item active" data-page="home">
+          <i class="fa-solid fa-house"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="sidebar-item" data-page="workbench">
+          <i class="fa-solid fa-th-large"></i>
+          <span>Workbench</span>
+        </a>
+        <a href="#" class="sidebar-item" data-page="attendance">
+          <i class="fa-solid fa-clock"></i>
+          <span>Attendance</span>
+        </a>
+        <a href="#" class="sidebar-item" data-page="approval">
+          <i class="fa-solid fa-file-check"></i>
+          <span>Approvals</span>
+        </a>
+        <a href="#" class="sidebar-item" data-page="notice">
+          <i class="fa-solid fa-megaphone"></i>
+          <span>Notices</span>
+        </a>
+        <a href="#" class="sidebar-item" data-page="meeting">
+          <i class="fa-solid fa-video"></i>
+          <span>Meetings</span>
+        </a>
+        <a href="#" class="sidebar-item" data-page="doc">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Documents</span>
+        </a>
+        <a href="#" class="sidebar-item" data-page="contacts">
+          <i class="fa-solid fa-address-book"></i>
+          <span>Directory</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="#" class="sidebar-item" data-page="settings">
+          <i class="fa-solid fa-gear"></i>
+          <span>Settings</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      <!-- Dashboard Page -->
+      <div class="page active" id="page-home">
+        <!-- Greeting -->
+        <div class="greeting-section">
+          <h1>Good morning, Coco</h1>
+          <p>Monday, April 27, 2026</p>
+        </div>
+
+        <!-- Quick Check-in -->
+        <button class="checkin-btn" id="checkinBtn">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Quick Check-in</span>
+        </button>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Pending</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">12</span>
+            <span class="stat-label">Messages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Meetings</span>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="section">
+          <h2 class="section-title">Quick Actions</h2>
+          <div class="quick-grid">
+            <button class="quick-item" data-action="expense">
+              <div class="quick-icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </div>
+              <span>Expense</span>
+            </button>
+            <button class="quick-item" data-action="leave">
+              <div class="quick-icon">
+                <i class="fa-solid fa-calendar-minus"></i>
+              </div>
+              <span>Leave</span>
+            </button>
+            <button class="quick-item" data-action="meeting">
+              <div class="quick-icon">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <span>Meeting</span>
+            </button>
+            <button class="quick-item" data-action="report">
+              <div class="quick-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <span>Report</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pending Approvals -->
+        <div class="section">
+          <div class="section-header">
+            <h2 class="section-title">Pending Approvals</h2>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="approval-list">
+            <div class="approval-card">
+              <div class="approval-left">
+                <div class="approval-avatar">KM</div>
+                <div class="approval-info">
+                  <span class="approval-title">Fashion Show Budget Reallocation</span>
+                  <span class="approval-meta">Karl Mayer · €120,000</span>
+                </div>
+              </div>
+              <div class="approval-actions">
+                <button class="action-btn approve"><i class="fa-solid fa-check"></i></button>
+                <button class="action-btn reject"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+            </div>
+            <div class="approval-card">
+              <div class="approval-left">
+                <div class="approval-avatar">VH</div>
+                <div class="approval-info">
+                  <span class="approval-title">Leave Request - Paris Exhibition</span>
+                  <span class="approval-meta">Virginie Hcher · 3 days</span>
+                </div>
+              </div>
+              <div class="approval-actions">
+                <button class="action-btn approve"><i class="fa-solid fa-check"></i></button>
+                <button class="action-btn reject"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Meetings -->
+        <div class="section">
+          <div class="section-header">
+            <h2 class="section-title">Upcoming Meetings</h2>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="meeting-list">
+            <div class="meeting-card">
+              <div class="meeting-time-box">
+                <span class="time">10:30</span>
+                <span class="period">AM</span>
+              </div>
+              <div class="meeting-info">
+                <span class="meeting-title">Spring Collection Review</span>
+                <span class="meeting-meta">
+                  <i class="fa-solid fa-video"></i> Video · 1 hr
+                </span>
+              </div>
+            </div>
+            <div class="meeting-card">
+              <div class="meeting-time-box">
+                <span class="time">2:00</span>
+                <span class="period">PM</span>
+              </div>
+              <div class="meeting-info">
+                <span class="meeting-title">Creative Direction Meeting</span>
+                <span class="meeting-meta">
+                  <i class="fa-solid fa-building"></i> Studio 31 · 45 min
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workbench Page -->
+      <div class="page" id="page-workbench">
+        <div class="page-header">
+          <h1>Workbench</h1>
+        </div>
+        <div class="app-grid">
+          <button class="app-card">
+            <div class="app-icon">
+              <i class="fa-solid fa-chart-bar"></i>
+            </div>
+            <span>Analytics</span>
+          </button>
+          <button class="app-card">
+            <div class="app-icon">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <span>Contracts</span>
+          </button>
+          <button class="app-card">
+            <div class="app-icon">
+              <i class="fa-solid fa-users-cog"></i>
+            </div>
+            <span>HR Portal</span>
+          </button>
+          <button class="app-card">
+            <div class="app-icon">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <span>Invoicing</span>
+          </button>
+          <button class="app-card">
+            <div class="app-icon">
+              <i class="fa-solid fa-vault"></i>
+            </div>
+            <span>Vault</span>
+          </button>
+          <button class="app-card">
+            <div class="app-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <span>Compliance</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Directory Page -->
+      <div class="page" id="page-contacts">
+        <div class="page-header">
+          <h1>Directory</h1>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" placeholder="Search employees...">
+        </div>
+        <div class="alpha-index">
+          <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
+          <span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span>
+          <span>N</span><span>O</span><span>P</span><span>Q</span><span>R</span><span>S</span>
+          <span>T</span><span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
+        </div>
+        <div class="contact-list">
+          <div class="dept-header">
+            <span>Executive Leadership</span>
+            <span class="count">3</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-avatar">CC</div>
+            <div class="contact-info">
+              <span class="contact-name">Coco Chanel</span>
+              <span class="contact-title">Creative Director</span>
+            </div>
+            <div class="contact-actions">
+              <button><i class="fa-solid fa-phone"></i></button>
+              <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-avatar">KM</div>
+            <div class="contact-info">
+              <span class="contact-name">Karl Mayer</span>
+              <span class="contact-title">Artistic Director</span>
+            </div>
+            <div class="contact-actions">
+              <button><i class="fa-solid fa-phone"></i></button>
+              <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+          </div>
+          <div class="dept-header">
+            <span>Design Studio</span>
+            <span class="count">8</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-avatar">VH</div>
+            <div class="contact-info">
+              <span class="contact-name">Virginie Hcher</span>
+              <span class="contact-title">Studio Director</span>
+            </div>
+            <div class="contact-actions">
+              <button><i class="fa-solid fa-phone"></i></button>
+              <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-avatar">PM</div>
+            <div class="contact-info">
+              <span class="contact-name">Pierre Martin</span>
+              <span class="contact-title">Senior Designer</span>
+            </div>
+            <div class="contact-actions">
+              <button><i class="fa-solid fa-phone"></i></button>
+              <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mail Page -->
+      <div class="page" id="page-mail">
+        <div class="page-header">
+          <h1>Mail</h1>
+        </div>
+        <div class="mail-tabs">
+          <button class="mail-tab active">Inbox</button>
+          <button class="mail-tab">Sent</button>
+          <button class="mail-tab">Drafts</button>
+        </div>
+        <div class="mail-list">
+          <div class="mail-item unread">
+            <div class="mail-star"><i class="fa-solid fa-star"></i></div>
+            <div class="mail-content">
+              <span class="mail-sender">Karl Mayer</span>
+              <span class="mail-subject">FW: Fall 2026 Collection - Final Approval Needed</span>
+              <span class="mail-time">10:30 AM</span>
+            </div>
+          </div>
+          <div class="mail-item unread">
+            <div class="mail-star"><i class="fa-regular fa-star"></i></div>
+            <div class="mail-content">
+              <span class="mail-sender">Virginie Hcher</span>
+              <span class="mail-subject">Paris Exhibition Planning Update</span>
+              <span class="mail-time">9:45 AM</span>
+            </div>
+          </div>
+          <div class="mail-item unread">
+            <div class="mail-star"><i class="fa-regular fa-star"></i></div>
+            <div class="mail-content">
+              <span class="mail-sender">PR Department</span>
+              <span class="mail-subject">Press Coverage: Spring Show in Milan</span>
+              <span class="mail-time">Yesterday</span>
+            </div>
+          </div>
+          <div class="mail-item">
+            <div class="mail-star"><i class="fa-solid fa-star"></i></div>
+            <div class="mail-content">
+              <span class="mail-sender">Legal Team</span>
+              <span class="mail-subject">Trademark Renewal: No.5 Fragrance Line</span>
+              <span class="mail-time">Yesterday</span>
+            </div>
+          </div>
+          <div class="mail-item">
+            <div class="mail-star"><i class="fa-regular fa-star"></i></div>
+            <div class="mail-content">
+              <span class="mail-sender">Pierre Martin</span>
+              <span class="mail-subject">Sketches: Haute Couture Spring Series</span>
+              <span class="mail-time">Apr 25</span>
+            </div>
+          </div>
+        </div>
+        <button class="compose-fab" id="composeBtn">
+          <i class="fa-solid fa-pen"></i>
+        </button>
+      </div>
+
+      <!-- Profile Page -->
+      <div class="page" id="page-settings">
+        <!-- Employee Card -->
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="company-badge">
+              <img src="Chanel-logo.png" alt="Company Logo" class="company-logo-img" id="companyLogo">
+              <span id="companyBadgeName">Chanel</span>
+            </div>
+          </div>
+          <div class="profile-body">
+            <div class="profile-avatar">
+              <img class="avatar-img" src="" alt="avatar">
+              <span class="avatar-initials">CC</span>
+              <div class="status-dot"></div>
+            </div>
+            <h2 class="profile-name">Coco Chanel</h2>
+            <p class="profile-title">Creative Director</p>
+            <p class="profile-dept">Fashion House</p>
+          </div>
+          <div class="profile-info">
+            <div class="info-row">
+              <span class="info-label">Employee ID</span>
+              <span class="info-value">CH-1921-0001</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Start Date</span>
+              <span class="info-value">January 1921</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Email</span>
+              <span class="info-value">c.chanel@chanel.com</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Phone</span>
+              <span class="info-value">+33 1 55 35 58 00</span>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <a href="mailto:c.chanel@chanel.com" class="action-button">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="tel:+33155583580" class="action-button">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Settings List -->
+        <div class="settings-list">
+          <button class="settings-item">
+            <div class="settings-icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <span class="settings-label">Personal Information</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="settings-item">
+            <div class="settings-icon">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <span class="settings-label">Notifications</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="settings-item">
+            <div class="settings-icon">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <span class="settings-label">Security</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="settings-item logout">
+            <div class="settings-icon">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+            <span class="settings-label">Sign Out</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Placeholder Pages -->
+      <div class="page" id="page-attendance">
+        <div class="page-header">
+          <h1>Attendance</h1>
+        </div>
+        <div class="placeholder">
+          <i class="fa-solid fa-clock"></i>
+          <p>Attendance Management</p>
+        </div>
+      </div>
+
+      <div class="page" id="page-approval">
+        <div class="page-header">
+          <h1>Approvals</h1>
+        </div>
+        <div class="placeholder">
+          <i class="fa-solid fa-file-check"></i>
+          <p>Approval Center</p>
+        </div>
+      </div>
+
+      <div class="page" id="page-notice">
+        <div class="page-header">
+          <h1>Notices</h1>
+        </div>
+        <div class="placeholder">
+          <i class="fa-solid fa-megaphone"></i>
+          <p>Company Notices</p>
+        </div>
+      </div>
+
+      <div class="page" id="page-meeting">
+        <div class="page-header">
+          <h1>Meetings</h1>
+        </div>
+        <div class="placeholder">
+          <i class="fa-solid fa-video"></i>
+          <p>Meeting Rooms</p>
+        </div>
+      </div>
+
+      <div class="page" id="page-doc">
+        <div class="page-header">
+          <h1>Documents</h1>
+        </div>
+        <div class="placeholder">
+          <i class="fa-solid fa-file-lines"></i>
+          <p>Documents</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Tab Bar -->
+    <nav class="tab-bar">
+      <a href="#" class="tab-item active" data-page="home">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="#" class="tab-item" data-page="workbench">
+        <i class="fa-solid fa-th-large"></i>
+        <span>Workbench</span>
+      </a>
+      <a href="#" class="tab-item" data-page="contacts">
+        <i class="fa-solid fa-address-book"></i>
+        <span>Directory</span>
+      </a>
+      <a href="#" class="tab-item" data-page="mail">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Mail</span>
+      </a>
+      <a href="#" class="tab-item" data-page="settings">
+        <i class="fa-solid fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Compose Modal -->
+  <div class="modal" id="composeModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span>New Message</span>
+        <button class="close-btn" id="closeCompose">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input type="text" placeholder="To" id="mailTo">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Subject" id="mailSubject">
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Message" id="mailContent"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="saveDraft">Save Draft</button>
+        <button class="btn-primary" id="sendMail">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
