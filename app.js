@@ -249,8 +249,7 @@ function initFromConfig() {
     sidebarAvatar.textContent = initials;
   }
 
-  // Profile 页面公司信息
-  document.getElementById('companyBadgeName').textContent = COMPANY.name;
+  // Profile 页面公司信息（companyBadgeName 保持 HTML 中的静态文本）
   document.getElementById('companyLogo').src = COMPANY.logo;
   document.getElementById('companyLogo').alt = COMPANY.name;
 

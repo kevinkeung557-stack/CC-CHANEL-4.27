@@ -6,15 +6,15 @@ const COMPANY = {
 
 // ========== 员工信息配置 ==========
 const EMPLOYEE = {
-  name: "Coco Chanel",
-  title: "Creative Director",
+  name: "Zhiwei Zhou",
+  title: "Senior Account Manager",
   department: "Fashion House",
-  employeeId: "CH-1921-0001",
-  startDate: "January 1921",
-  email: "c.chanel@chanel.com",
-  phone: "+33 1 55 35 58 00",
+  employeeId: "CH-1014009",
+  startDate: "January 2023",
+  email: "zhiwei.zhou@chanel.com",
+  phone: "+86 1761217788",
   status: "online",
-  avatar: "coco.png"  // 头像图片路径，留空显示首字母缩写
+  avatar: "man.png"  // 头像图片路径，留空显示首字母缩写
 };
 
 // ========== 应用配置 ==========
